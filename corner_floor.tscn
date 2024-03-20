@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://7sg5u3vp0mxq"]
+
+[ext_resource type="PackedScene" uid="uid://cphvj3wc462dg" path="res://art/Models/GLB format/corner.glb" id="1_w4tu0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e7ym4"]
+size = Vector3(0.900968, 0.064745, 0.965161)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_alud1"]
+size = Vector3(0.0947367, 0.144758, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7x7mr"]
+size = Vector3(0.900686, 0.146533, 0.106284)
+
+[node name="CornerFloor" type="StaticBody3D"]
+metadata/_edit_group_ = true
+
+[node name="corner" parent="." instance=ExtResource("1_w4tu0")]
+
+[node name="Flat" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0486064, 0.0312242, -0.0192059)
+shape = SubResource("BoxShape3D_e7ym4")
+
+[node name="Wall_1" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.450018, 0.0745417, 0)
+shape = SubResource("BoxShape3D_alud1")
+
+[node name="Wall_2" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04982, 0.0752964, 0.450811)
+shape = SubResource("BoxShape3D_7x7mr")

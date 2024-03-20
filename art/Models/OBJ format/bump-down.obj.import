@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cbhfgm6l662k2"
+path="res://.godot/imported/bump-down.obj-39caf36df2eaab8a640064dbd9f3d982.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bump-down.obj-39caf36df2eaab8a640064dbd9f3d982.mesh"]
+
+source_file="res://art/Models/OBJ format/bump-down.obj"
+dest_files=["res://.godot/imported/bump-down.obj-39caf36df2eaab8a640064dbd9f3d982.mesh", "res://.godot/imported/bump-down.obj-39caf36df2eaab8a640064dbd9f3d982.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

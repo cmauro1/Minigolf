@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5ex0m0d0nkbg"]
+
+[ext_resource type="PackedScene" uid="uid://tbb5cteu7200" path="res://art/Models/GLB format/ball-blue.glb" id="1_jyoav"]
+[ext_resource type="Script" path="res://ball.gd" id="1_mi5qp"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_lyc6i"]
+radius = 0.0375623
+
+[node name="Ball" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0349642, 0)
+script = ExtResource("1_mi5qp")
+metadata/_edit_group_ = true
+
+[node name="ball-blue" parent="." instance=ExtResource("1_jyoav")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_lyc6i")

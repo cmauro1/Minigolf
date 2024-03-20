@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://dqfpkyxf5k4gl"]
+
+[ext_resource type="PackedScene" uid="uid://eqc7h1ohrgc8" path="res://art/Models/GLB format/start.glb" id="1_bppgj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6r7xg"]
+size = Vector3(4.50994, 0.702114, 2.94675)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lqrcy"]
+size = Vector3(0.828595, 0.122923, 0.482138)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_b1mtx"]
+bounce = 50.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tg0o2"]
+size = Vector3(0.148639, 0.305631, 1)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_g0txp"]
+bounce = 50.0
+
+[node name="StartFloor" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0634643, 0.530549)
+metadata/_edit_group_ = true
+
+[node name="start" parent="." instance=ExtResource("1_bppgj")]
+
+[node name="Ramp" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.175439, 0, 0, 0, 0.174096, -0.0216724, 0, 0.0216724, 0.174096, 0.00528537, -0.0294062, 0.236373)
+shape = SubResource("BoxShape3D_6r7xg")
+
+[node name="Flat" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00337428, -0.255059)
+shape = SubResource("BoxShape3D_lqrcy")
+
+[node name="LeftWall" type="StaticBody3D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_b1mtx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LeftWall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.475113, 0, 0)
+shape = SubResource("BoxShape3D_tg0o2")
+
+[node name="RightWall" type="StaticBody3D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_g0txp")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RightWall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.475006, 0, 0)
+shape = SubResource("BoxShape3D_tg0o2")

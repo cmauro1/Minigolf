@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dwic4yn4gjids"
+path="res://.godot/imported/skew-large-corner-open.obj-2c174b35988cacf6d58b3a81d3da7655.mesh"
+
+[deps]
+
+files=["res://.godot/imported/skew-large-corner-open.obj-2c174b35988cacf6d58b3a81d3da7655.mesh"]
+
+source_file="res://art/Models/OBJ format/skew-large-corner-open.obj"
+dest_files=["res://.godot/imported/skew-large-corner-open.obj-2c174b35988cacf6d58b3a81d3da7655.mesh", "res://.godot/imported/skew-large-corner-open.obj-2c174b35988cacf6d58b3a81d3da7655.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

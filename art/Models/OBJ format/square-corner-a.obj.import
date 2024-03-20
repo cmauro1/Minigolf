@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bjq3nebcn4kqo"
+path="res://.godot/imported/square-corner-a.obj-ee6eaf7058ef7912d63ccb2ad83bebeb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/square-corner-a.obj-ee6eaf7058ef7912d63ccb2ad83bebeb.mesh"]
+
+source_file="res://art/Models/OBJ format/square-corner-a.obj"
+dest_files=["res://.godot/imported/square-corner-a.obj-ee6eaf7058ef7912d63ccb2ad83bebeb.mesh", "res://.godot/imported/square-corner-a.obj-ee6eaf7058ef7912d63ccb2ad83bebeb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

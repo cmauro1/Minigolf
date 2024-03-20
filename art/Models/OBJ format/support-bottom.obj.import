@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://j26d8ylmv76q"
+path="res://.godot/imported/support-bottom.obj-659908078fc0064cba4467f9d217da34.mesh"
+
+[deps]
+
+files=["res://.godot/imported/support-bottom.obj-659908078fc0064cba4467f9d217da34.mesh"]
+
+source_file="res://art/Models/OBJ format/support-bottom.obj"
+dest_files=["res://.godot/imported/support-bottom.obj-659908078fc0064cba4467f9d217da34.mesh", "res://.godot/imported/support-bottom.obj-659908078fc0064cba4467f9d217da34.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

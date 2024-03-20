@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://becoplwjtr4xq"
+path="res://.godot/imported/split-t.obj-84458359120fb4fc99a72ce60cd952ed.mesh"
+
+[deps]
+
+files=["res://.godot/imported/split-t.obj-84458359120fb4fc99a72ce60cd952ed.mesh"]
+
+source_file="res://art/Models/OBJ format/split-t.obj"
+dest_files=["res://.godot/imported/split-t.obj-84458359120fb4fc99a72ce60cd952ed.mesh", "res://.godot/imported/split-t.obj-84458359120fb4fc99a72ce60cd952ed.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

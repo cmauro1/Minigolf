@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c2txnu5l5m3gj"
+path="res://.godot/imported/club-red.obj-32a2ce23febe8c001ccba97123d588fd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/club-red.obj-32a2ce23febe8c001ccba97123d588fd.mesh"]
+
+source_file="res://art/Models/OBJ format/club-red.obj"
+dest_files=["res://.godot/imported/club-red.obj-32a2ce23febe8c001ccba97123d588fd.mesh", "res://.godot/imported/club-red.obj-32a2ce23febe8c001ccba97123d588fd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

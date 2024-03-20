@@ -1,0 +1,123 @@
+[gd_scene load_steps=10 format=3 uid="uid://bmv6opy6x1uf8"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_gjcfy"]
+[ext_resource type="PackedScene" uid="uid://b5ex0m0d0nkbg" path="res://ball.tscn" id="1_stab8"]
+[ext_resource type="PackedScene" uid="uid://c7hs3nyhw1mts" path="res://club.tscn" id="2_2l7v2"]
+[ext_resource type="Script" path="res://club_pivot.gd" id="2_od7rk"]
+[ext_resource type="Script" path="res://timer.gd" id="3_84egu"]
+
+[sub_resource type="Animation" id="Animation_kkgyy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Club:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Club:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, -0.2)]
+}
+
+[sub_resource type="Animation" id="Animation_w1tsv"]
+resource_name = "rest_club"
+length = 0.3
+step = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Club:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, -0.2)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Club:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 1.5708, -0.174533), Vector3(0, 1.5708, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_vkflm"]
+resource_name = "swing_club"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Club:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5),
+"transitions": PackedFloat32Array(1, 3.4822, 1),
+"update": 0,
+"values": [Vector3(0, 0, -0.2), Vector3(0, 0, -0.4), Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Club:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5),
+"transitions": PackedFloat32Array(1, 3.86374, 1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0), Vector3(0, 1.5708, 0.20944), Vector3(0, 1.5708, -0.174533)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_82dqe"]
+_data = {
+"RESET": SubResource("Animation_kkgyy"),
+"rest_club": SubResource("Animation_w1tsv"),
+"swing_club": SubResource("Animation_vkflm")
+}
+
+[node name="Player" type="Node3D"]
+script = ExtResource("1_gjcfy")
+
+[node name="Ball" parent="." instance=ExtResource("1_stab8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="Timer" type="Timer" parent="Ball"]
+wait_time = 0.092
+script = ExtResource("3_84egu")
+
+[node name="ClubPivot" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.02, 0)
+script = ExtResource("2_od7rk")
+metadata/_edit_group_ = true
+
+[node name="Club" parent="ClubPivot" instance=ExtResource("2_2l7v2")]
+transform = Transform3D(-3.61999e-06, 0, 1, 0, 1, 0, -1, 0, -3.61999e-06, 0, 0, -0.2)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ClubPivot"]
+libraries = {
+"": SubResource("AnimationLibrary_82dqe")
+}
+
+[connection signal="stopped" from="Ball" to="." method="_on_ball_stopped"]

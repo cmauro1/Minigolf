@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c854mj2fol238"
+path="res://.godot/imported/tunnel-double.obj-7939cbd5943109e6dd6191d1db6a184b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tunnel-double.obj-7939cbd5943109e6dd6191d1db6a184b.mesh"]
+
+source_file="res://art/Models/OBJ format/tunnel-double.obj"
+dest_files=["res://.godot/imported/tunnel-double.obj-7939cbd5943109e6dd6191d1db6a184b.mesh", "res://.godot/imported/tunnel-double.obj-7939cbd5943109e6dd6191d1db6a184b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

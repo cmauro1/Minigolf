@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdvjdila0ukj7"]
+
+[ext_resource type="PackedScene" uid="uid://dqfpkyxf5k4gl" path="res://start.tscn" id="1_okyed"]
+[ext_resource type="PackedScene" uid="uid://dtrw5glblyd7g" path="res://straight.tscn" id="2_88p1s"]
+[ext_resource type="PackedScene" uid="uid://7sg5u3vp0mxq" path="res://corner_floor.tscn" id="3_c44h2"]
+
+[node name="TestHole" type="Node"]
+
+[node name="StartFloor" parent="." instance=ExtResource("1_okyed")]
+
+[node name="StraightFloor" parent="." instance=ExtResource("2_88p1s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.12666, 1.52981)
+
+[node name="StraightFloor2" parent="." instance=ExtResource("2_88p1s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.126326, 2.52166)
+
+[node name="CornerFloor" parent="." instance=ExtResource("3_c44h2")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.000642061, -0.125166, 3.51932)
+
+[node name="CornerFloor2" parent="." instance=ExtResource("3_c44h2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.993816, -0.12522, 3.51858)
+
+[node name="StraightFloor3" parent="." instance=ExtResource("2_88p1s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.99421, -0.124265, 2.52064)

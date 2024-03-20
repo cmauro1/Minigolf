@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8yt1vpoutygf"]
+
+[ext_resource type="Script" path="res://UserInterface.gd" id="1_xbxht"]
+[ext_resource type="Script" path="res://JustifyPlayerPositionBtn.gd" id="2_jvjgs"]
+[ext_resource type="Script" path="res://JustifyPlayerPositionLbl.gd" id="3_tvx2t"]
+
+[node name="UserInterface" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_xbxht")
+
+[node name="JustifyPlayerPositionBtn" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)
+script = ExtResource("2_jvjgs")
+
+[node name="JustifyPlayerPositionLbl" type="Label" parent="JustifyPlayerPositionBtn"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("3_tvx2t")

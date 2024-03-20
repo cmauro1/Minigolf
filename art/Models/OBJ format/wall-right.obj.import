@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cq34daud31pip"
+path="res://.godot/imported/wall-right.obj-47faa9bc5d1b705cc705e0c5ed2cb1c5.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall-right.obj-47faa9bc5d1b705cc705e0c5ed2cb1c5.mesh"]
+
+source_file="res://art/Models/OBJ format/wall-right.obj"
+dest_files=["res://.godot/imported/wall-right.obj-47faa9bc5d1b705cc705e0c5ed2cb1c5.mesh", "res://.godot/imported/wall-right.obj-47faa9bc5d1b705cc705e0c5ed2cb1c5.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

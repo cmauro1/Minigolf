@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dnua0blyelifi"
+path="res://.godot/imported/ball-blue.obj-312dfca0b89cca4115a52b05ecf5993c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ball-blue.obj-312dfca0b89cca4115a52b05ecf5993c.mesh"]
+
+source_file="res://art/Models/OBJ format/ball-blue.obj"
+dest_files=["res://.godot/imported/ball-blue.obj-312dfca0b89cca4115a52b05ecf5993c.mesh", "res://.godot/imported/ball-blue.obj-312dfca0b89cca4115a52b05ecf5993c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

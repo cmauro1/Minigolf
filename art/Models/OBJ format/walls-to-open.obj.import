@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://r16ptwdk1hte"
+path="res://.godot/imported/walls-to-open.obj-aab0b3aeb49a55712b0e8a8999f7cf01.mesh"
+
+[deps]
+
+files=["res://.godot/imported/walls-to-open.obj-aab0b3aeb49a55712b0e8a8999f7cf01.mesh"]
+
+source_file="res://art/Models/OBJ format/walls-to-open.obj"
+dest_files=["res://.godot/imported/walls-to-open.obj-aab0b3aeb49a55712b0e8a8999f7cf01.mesh", "res://.godot/imported/walls-to-open.obj-aab0b3aeb49a55712b0e8a8999f7cf01.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

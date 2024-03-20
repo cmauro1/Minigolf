@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://devtnbpm6eost"
+path="res://.godot/imported/gap.obj-df1ed8f4202d9055e326ebe440a3c0e1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/gap.obj-df1ed8f4202d9055e326ebe440a3c0e1.mesh"]
+
+source_file="res://art/Models/OBJ format/gap.obj"
+dest_files=["res://.godot/imported/gap.obj-df1ed8f4202d9055e326ebe440a3c0e1.mesh", "res://.godot/imported/gap.obj-df1ed8f4202d9055e326ebe440a3c0e1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
