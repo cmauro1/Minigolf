@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://dihsn7wc3ljnp"]
+
+[ext_resource type="PackedScene" uid="uid://dort3saw8yuhu" path="res://art/Models/GLB format/end.glb" id="1_2n1t5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qlnv7"]
+size = Vector3(0.845572, 0.0662071, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k5jsf"]
+size = Vector3(0.0992024, 0.147409, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5fbqt"]
+size = Vector3(0.099, 0.147, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mohe6"]
+size = Vector3(1, 0.147, 0.099)
+
+[node name="EndFloor" type="StaticBody3D"]
+
+[node name="end" parent="." instance=ExtResource("1_2n1t5")]
+
+[node name="Flat" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0314154, 0)
+shape = SubResource("BoxShape3D_qlnv7")
+
+[node name="LeftWall" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LeftWall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.451722, 0.0759448, 0)
+shape = SubResource("BoxShape3D_k5jsf")
+
+[node name="RightWall" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RightWall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.452, 0.076, 0)
+shape = SubResource("BoxShape3D_5fbqt")
+
+[node name="RearWall" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RearWall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.076, 0.449687)
+shape = SubResource("BoxShape3D_mohe6")
