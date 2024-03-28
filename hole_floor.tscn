@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dsnpv6l1obyf5"]
+
+[ext_resource type="PackedScene" uid="uid://cac5hp0plocq4" path="res://art/Models/GLB format/hole-square.glb" id="1_qac45"]
+
+[node name="hole_floor" type="Node3D"]
+
+[node name="hole-square" parent="." instance=ExtResource("1_qac45")]
